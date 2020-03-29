@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+</head>
+
+<body><!---start of 1 screen-->
+    <div class="text-center" id="startQuiz">
+        <h1>lets play Quiz</h1><br>
+        <P>The time period for quiz will be one minute.</P>
+        <button >Start Quiz</button>
+    </div>
+
+
+    
+    <!--end of 1st scfre-->
+    <!---start of 2 screen---->
+    <div id="mainDev" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" id="question-area">
+                <div class="question" id="question"></div>
+                <div class="answer">
+                    <ol id="question-list">
+                        <li id="opt-1"></li>
+                        <li id="opt-2"></li>
+                        <li id="opt-3"></li>
+                        <li id="opt-4"></li>
+                    </ol>
+                </div>
+                <div class="answer-checker">
+                    <img src="" alt="image" id="resultImage" height="24px" width="24px">
+                   <button id="previous-question" >Back</button>
+                    <button id="next-question">next</button>
+                    <button id="submit-question">submit</button>
+                    <!-- <button id="next-question">Next</button>
+                    <button id="submit-question">Submit</button> -->
+                    <span id="seconds"></span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--screen 3rd-->
+    <div id="reportDiv">
+        <h1>Score Report</h1>
+        <h5></h5>
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

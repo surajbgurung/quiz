@@ -1,0 +1,43 @@
+body{
+    background-color: wheat;
+}
+/* #question-area{
+    background-color: tomato;
+    height:auto;
+} */
+ol li{
+    padding:5px;
+    border:1px solid black;
+    margin:2px;
+}
+#mainDev{
+   display:none; 
+}
+#reportDiv{
+display:none;
+}
+#previous-question{
+    display:none;
+}
+#submit-question{
+    display:none;
+}
+/* button{
+    display: flex;
+    align-items: center;
+        justify-content: center} */
+/* .answer-checker{
+    position: fixed;}
+
+#previous-question{
+    position:absolute;
+    right:10px;
+    top:30px;}
+
+#next-question{
+    position:absolute;;
+right:-1135px;}
+#submit-question{
+    position: relative;
+    right:-250px;
+} */
