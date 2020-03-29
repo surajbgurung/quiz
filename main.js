@@ -70,7 +70,7 @@ var resultImage = document.getElementById("resultImage");
  var totalReport=document.getElementsByTagName("h5");
 
 //  var questionTime=60;
-//  var count=0;
+//  var count=60;
  
 //  function displaySeconds(){
       
@@ -160,7 +160,7 @@ questionlist.addEventListener("click",function(event){
         resultImage.setAttribute("src","./assets/iconCross.png")
         response[counter]=0;//when answer is wrong
     }
-    
+    //uncomment below if you want to check answer right away
 resultImage.style.display="block";
 });
 
