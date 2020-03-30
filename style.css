@@ -1,10 +1,7 @@
 body{
     background-color: wheat;
 }
-/* #question-area{
-    background-color: tomato;
-    height:auto;
-} */
+
 ol li{
     padding:5px;
     border:1px solid black;
@@ -31,22 +28,3 @@ ol li:hover{
     background-color: tomato;
     opacity: 0.7;
 }
-/* button{
-    display: flex;
-    align-items: center;
-        justify-content: center} */
-/* .answer-checker{
-    position: fixed;}
-
-#previous-question{
-    position:absolute;
-    right:10px;
-    top:30px;}
-
-#next-question{
-    position:absolute;;
-right:-1135px;}
-#submit-question{
-    position: relative;
-    right:-250px;
-} */

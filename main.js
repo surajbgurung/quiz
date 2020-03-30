@@ -11,37 +11,37 @@ var questionSet=[
         correct:"Hyper Text Markup Language"
     },
     {
-        question:"Which is the highest peak in the world?",
-        option1:"Mt. Kilimanjaro",
-        option2:"Andus Mountain",
-        option3:"Mt. Fuji",
-        option4:"Mt. Everest",
-        correct:"Mt. Everest"
+        question:"Inside which HTML element do we put the JavaScript?",
+        option1:"js",
+        option2:"script",
+        option3:"javascript",
+        option4:"scripting",
+        correct:"script"
 
     },
     {
-        question:"Which city s also know as the city of Temples?",
-        option1:"New Delhi",
-        option2:"Tehran",
-        option3:"kathmandu",
-        option4:"Islamabad",
-        correct:"kathmandu"
+        question:"Where is the correct place to insert a JavaScript?",
+        option1:"Both the head section and the body section are correct",
+        option2:"The head section",
+        option3:"The body section",
+        option4:"At the title section",
+        correct:"Both the head section and the body section are correct"
     },
     {
-        question:"What is the full form of NY?",
-        option1:"Never Yell",
-        option2:"Never Young",
-        option3:"New York",
-        option4:"New York1",
-        correct:"New York"
+        question:"How do you write 'Hello World' in an alert box?",
+        option1:"msgBox('Hello World')",
+        option2:"alert('Hello World')",
+        option3:"msg(hello world)",
+        option4:"alerbox('hello world')",
+        correct:"alert('Hello World')"
     },
     {
-        question:"Who is the current president of USA?",
-        option1:"Trump",
-        option2:"Clinton",
-        option3:"Obama",
-        option4:"KP Oli",
-        correct:"Trump"
+        question:"How do you call a function named 'myFunction'?",
+        option1:"call myfunction()",
+        option2:"myFunction()",
+        option3:"call function myfunction()",
+        option4:"MyFunction()",
+        correct:"myFunction()"
     },
     {
         question:"Which country has highest number of corona patients now?",
@@ -124,7 +124,7 @@ function buttonVisibility(){
 
 
 
-
+//for start quiz
 starQuiz.addEventListener("click", function (event) {
     buttonVisibility();
     starQuiz.style.display = "none";
@@ -136,10 +136,11 @@ starQuiz.addEventListener("click", function (event) {
 });
 
 
-var response=[];
+var response=[];//array for storing the response as correct or wrong
 var counter=0;
 renderQuestion(counter);
 
+//for next button
 next.addEventListener("click", function () {
     counter++;
     buttonVisibility();
@@ -151,6 +152,8 @@ next.addEventListener("click", function () {
     resultImage.style.display="none";
 });
 
+
+//for chooing the answer
 questionlist.addEventListener("click",function(event){
     if(event.target.innerText===questionSet[counter].correct){
         
@@ -160,8 +163,8 @@ questionlist.addEventListener("click",function(event){
         resultImage.setAttribute("src","./assets/iconCross.png")
         response[counter]=0;//when answer is wrong
     }
-    //uncomment below if you want to check answer right away
-resultImage.style.display="block";
+    
+resultImage.style.display="block";//comment this if we want the answer at the last
 });
 
 //back button
